@@ -50,7 +50,7 @@ def video(url,quality):
 	downloader(word[choice], name)
 
 
-def playlst(url,quality):
+def playlst(url,quality): 		#funtion to download playlist
 
 	limit = raw_input("Enter \"yes\" to download entire playlist:")
 	if limit=="yes":
