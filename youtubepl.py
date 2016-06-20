@@ -1,3 +1,5 @@
+#!/bin/python
+# Adam Shamsudeen
 import urllib
 import requests
 from bs4 import BeautifulSoup
@@ -94,8 +96,7 @@ def playlst(url,quality): 		#funtion to download playlist
 
 
 def main() :
-	url="https://www.youtube.com/watch?v=Yfr5ISTSIAM"
-	#url="https://www.youtube.com/playlist?list=PLdJhb8qMrVC1mydazcLgJZ5X7txkkWYy_"
+	url=raw_input("Enter the link:")
 	quality =raw_input("Enter \"1\" for maximum qulity and \"2\" for 480p:")
 	result = re.match('^.*playlist.*$',url)			#check if it is a playlist
 	if result:
